@@ -1,0 +1,77 @@
+<!DOCTYPE hmtl>
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Desenvolvedora angular full-stack apaixonada por soluções digitais. Conheça meu portfólio e descubra como posso transformar suas ideias em realidade.">
+        <meta name="author" content="Carol Manfredini">
+        <title>Mindnight Studio Design - Portfólio Carol Manfredini</title>
+		
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/buttons.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body id="mindnight">
+		<nav class="nav">
+			<div class="flex justify-content-between align-items-center">
+				<a href="#home">
+					<div class="logo logo--mini"></div>
+				</a>
+				<div id="mainListDiv" class="main_list">
+					<ul class="navlinks">
+						<li><a href="#about-mindnight">Quem sou</a></li>
+						<li><a href="#portfolio-mindnight">Projetos</a></li>
+						<li><a href="#contact-mindnight">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="home" class="background">
+			<div class="gradient flex flex-column align-items-center justify-content-evenly">
+				<div class="logo"></div>
+				<div class="menu-home">
+					<a href="#about-mindnight">Quem sou</a>
+					<a href="#portfolio-mindnight">Projetos</a>
+					<a href="#contact-mindnight">Contato</a>
+				</div>
+			</div>
+		</section>
+		<section id="about-mindnight" class="section-page m-6">
+			<h2 class="title-page">Sobre o estúdio</h2>
+			<div class="grid mb-6 justify-content-center">
+				<div class="col-12 md:col-3">
+					<img src="./images/perfil.jpg" style="width: 100%;">
+				</div>
+				<div class="col-12 md:col-6 m-4">
+					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.
+					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.
+					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.
+					Após 6 anos de aprendizado e lapidação, a marca ganhou sua forma final. Uma história tão forte que foi traduzida em formas e cores.
+				</div>
+			</div>
+			<div class="grid justify-content-center">
+				<a class="button btn-primary-pink" href="./about.html">
+					Conheça a artista
+				</a>
+			</div>
+		</section>
+		<section id="portfolio-mindnight" class="section-page bg-pink">
+			<h2 class="title-page">Portfólio</h2>
+		</section>
+		<section id="contact-mindnight" class="section-page">
+			<h2 class="title-page">Contato</h2>
+		</section>
+	</body>
+
+	<script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 650) {
+                $('.nav').addClass('nav-bar');
+            } else {
+                $('.nav').removeClass('nav-bar');
+            }
+        });
+    </script>
+</html>

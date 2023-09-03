@@ -1,0 +1,20 @@
+.button {
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-family: var(--font-family-title);
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow-button);
+    text-decoration: none;
+}
+
+.btn-primary-pink {
+    color: var(--font-color-light);
+    background-color: var(--color-pink);
+}
+.btn-primary-pink:hover {
+    background-color: var(--color-pink400);
+}
+.btn-primary-pink:active {
+    background-color: var(--color-pink700);
+}
