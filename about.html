@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/buttons.css">
 		<link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/accordion.css">
 		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
@@ -30,9 +31,44 @@
 		</nav>
 
         <section class="section-page">
-            <div class="title-header">
-                Quem sou
+            <div class="title-header-container">
+                <div class="title-header">
+                    Sobre a artista
+                </div>
             </div>
+            <div class="grid m-6 justify-content-center align-items-center">
+				<div class="col-12 md:col-3">
+					<img src="./images/perfil.jpg" style="width: 100%;">
+				</div>
+				<div class="col-12 md:col-6">
+					Carol Manfredini iniciou seus estudos em 2010 quando ingressou no Colégio Técnico da UNESP Bauru, onde se formou 3 anos depois no ensino médio com habilitação em informática.<br>
+                    Após finalizar o ensino médio, ingressou na Universidade do Sagrado Coração em Bauru (atual Unisagrado) no curso de design.<br>
+                    Carol sempre se identificou com artes, desde pequena e acabou voltando para essa área após seu período no colégio técnico. A graduação de design foi escolhida por achar que não teria aptidão para trabalhar com programação. Porém, em 2013 ela ingressou no mercado de TI e nunca mais saiu. Atuou com diversos produtos de diversas frentes de negócios, várias tecnologias e atualmente está migrando da área de programação para UX Design.<br>
+                    Veja abaixo as experiências profissionais e habilidades que conquistou ao longo de sua carreira.
+				</div>
+			</div>
+            <div class="accordion grid m-6 justify-content-center">            
+                <div class="accordion-list col-12 md:col-9">
+                  <h3 class="title">Experiência</h3>
+                  <div class="content">A knife bolster is the thick section between the handle and the blade, and it strengthens the knife, and gives better balance and control. However, there is much disagreement on whether or not it is necessary.</div>
+                </div>
+            
+                <div class="accordion-list col-12 md:col-9">
+                    <h3 class="title">Formação</h3>
+                    <div class="content">Forged knives are stronger and retain their edge longer than stamped knives, which have more flexible blades. In the case of Wusthof, their forged knives go through 40 different steps in their factory, where the laser-cut knives go through 14 steps. Also, their forged knives include a bolster, which balances the knife and protects fingers, although bolsters can also be added to laser-cut knives. Laser-cut stamped knives can be of excellent quality too, however, and they are more economically priced.</div>
+                </div>
+            
+                <div class="accordion-list col-12 md:col-9">
+                    <h3 class="title">Habilidades</h3>
+                    <div class="content">Always wash them by hand with hot, soapy water. Never drop them in with a sinkful of dirty dishes, or run them through a dishwasher, which will not only bang them together, but damage the blade through excessive heating.</div>
+                </div>
+            
+                <div class="accordion-list col-12 md:col-9">
+                    <h3 class="title">Certificações</h3>
+                    <div class="content">The more you can spend, the better, but there are some less expensive options, such as Victorinox, which also make Swiss Army Knives. The blades are very sharp, and well-made for the price.</div>
+                </div>
+              </div>
         </section>
     </body>
+    <script src="js/accordion.js"></script>
 </html>

@@ -13,7 +13,8 @@
     --color-pink300: #FF85BE;
     --color-pink400: #FE62AB;
     --color-pink700: #B9006D;
-    --color-blue: rgba(63,175,238,1);
+    --color-blue: #3FAFEE;
+    --gray-dark: #3D3D3D;
     --shadow-button: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     --gradient-pattern: linear-gradient(90deg, rgba(255,79,165,1) 0%, rgba(63,175,238,1) 100%);
 }
@@ -185,11 +186,15 @@ html {
 	font-size: 20px;
 }
 
-.title-header {
+.title-header-container {
     background: var(--gradient-pattern);
-    padding: 16px;
+}
+
+.title-header {
+    background: linear-gradient(180deg, rgba(255,79,165,0) 20%, rgba(245,245,245,1) 100%);
     font-family: var(--font-family-title);
     color: var(--font-color);
 	text-align:center;
 	font-size: 4rem;
+    padding: 16px;
 }

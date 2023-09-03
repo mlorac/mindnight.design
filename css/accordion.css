@@ -1,0 +1,46 @@
+.title {
+    padding: 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    font-family: var(--font-family-title);
+    border-bottom: 0.05rem solid var(--gray-dark);
+    cursor: pointer;
+}
+.accordion > .accordion-list.active > .title {
+    color: var(--color-blue);
+    border-bottom: 0.05rem solid var(--color-pink);
+}
+.accordion > *,
+.accordion .content {
+    border-top: 1px solid var(--golden);
+}
+.accordion > *:last-child {
+    border-bottom: 1px solid var(--golden);
+}
+.content {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+}
+.steps {
+    counter-reset: my-counter;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.step::before {
+    counter-increment: my-counter;
+    content: counter(my-counter);
+    border-radius: 100%;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
