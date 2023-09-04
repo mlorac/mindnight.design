@@ -1,5 +1,5 @@
 .button {
-    padding: 12px 40px;
+    padding: 16px 40px;
     border-radius: 10px;
     font-family: var(--font-family-title);
     font-weight: bold;
@@ -17,4 +17,15 @@
 }
 .btn-primary-pink:active {
     background-color: var(--color-pink700);
+}
+
+.btn-primary-blue {
+    color: var(--font-color-light);
+    background-color: var(--color-blue);
+}
+.btn-primary-blue:hover {
+    background-color: var(--color-blue400);
+}
+.btn-primary-blue:active {
+    background-color: var(--color-blue700);
 }

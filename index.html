@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/buttons.css">
+		<link rel="stylesheet" href="css/tag.css">
 		<link rel="stylesheet" href="css/responsive.css">
 		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
 	<body id="mindnight">
 		<nav class="nav">
 			<div class="flex justify-content-between align-items-center">
-				<a href="#home">
+				<a href="./">
 					<div class="logo logo--mini"></div>
 				</a>
 				<div id="mainListDiv" class="main_list">
@@ -30,7 +31,9 @@
 		</nav>
 		<section id="home" class="background">
 			<div class="gradient flex flex-column align-items-center justify-content-evenly">
-				<div class="logo"></div>
+				<a href="./">
+					<div class="logo"></div>
+				</a>
 				<div class="menu-home">
 					<a href="#about-mindnight">Quem sou</a>
 					<a href="#portfolio-mindnight">Projetos</a>
@@ -38,40 +41,100 @@
 				</div>
 			</div>
 		</section>
-		<section id="about-mindnight" class="section-page m-6 mt-1">
-			<h2 class="title-page">Sobre o estúdio</h2>
-			<div class="grid mb-6 justify-content-center">
-				<div class="col-12 md:col-3">
+		<section id="about-mindnight" class="section-page m-3 md:m-4 lg:m-6 md:mt-0 mb-4">
+			<div class="title-page">Sobre o estúdio</div>
+			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
+				<div class="col-12 md:col-4 image-profile">
 					<img src="./images/perfil.jpg" style="width: 100%;">
 				</div>
-				<div class="col-12 md:col-6 m-4">
-					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.
-					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.
-					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.
+				<div class="col-12 md:col-6 line-height-4">
+					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.<br>
+					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.<br>
+					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.<br>
 					Após 6 anos de aprendizado e lapidação, a marca ganhou sua forma final. Uma história tão forte que foi traduzida em formas e cores.
 				</div>
 			</div>
-			<div class="grid justify-content-center">
-				<a class="button btn-primary-pink" href="./about.html">
+			<div class="grid justify-content-center m-0">
+				<a class="button btn-primary-pink" href="./about">
 					Conheça a artista
 				</a>
 			</div>
 		</section>
-		<section id="portfolio-mindnight" class="section-page bg-pink m-6 mt-1">
-			<h2 class="title-page">Portfólio</h2>
+		<section id="portfolio-mindnight" class="section-page bg-pink p-3 md:p-4 lg:p-6 py-4">
+			<div class="title-page">Portfólio</div>
+			<div class="grid justify-content-center align-items-center m-3 md:m-4 lg:m-6 gap-4">
+				<div class="card grid gap-2 col-12 md:col-10 lg:col-4 m-0">
+					<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+					<div class="grid m-0">
+						<div class="grid justify-content-between flex-column m-0">
+							<div>
+								<div class="card-title">
+									Hexágono
+								</div>
+								<div class="label w-70">
+									Estudo de marca para marcenaria
+								</div>
+							</div>
+							<div class="grid m-0">
+								<div class="tag tag-pink">
+									Branding
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card grid gap-2 col-12 md:col-9 lg:col-4 m-0">
+					<div class="col-3">
+						<img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg">
+					</div>
+					<div class="col-9 grid justify-content-between flex-column m-0">
+						<div>
+							<div class="card-title">
+								ATP Artes
+							</div>
+							<div class="label">
+								Rebranding da marca para gráfica encadernadora artesanal
+							</div>
+						</div>
+						<div class="grid m-0 gap-1">
+							<div class="tag tag-pink">
+								Branding
+							</div>
+							<div class="tag tag-rubro">
+								Web Design
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="contact-mindnight" class="section-page m-6 mt-1">
+		<section id="contact-mindnight" class="section-page m-3 md:m-4 lg:m-6">
 			<h2 class="title-page">Contato</h2>
 		</section>
 	</body>
 
 	<script>
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 650) {
+            if ($(document).scrollTop() > 780) {
                 $('.nav').addClass('nav-bar');
             } else {
                 $('.nav').removeClass('nav-bar');
             }
         });
     </script>
+	<footer class="footer">
+		<div class="grid flex-column m-0 align-items-center gap-2 md:gap-3">
+			<div class="logo-footer"></div>
+			<div class="divider"></div>
+			<div class="text-bold">Me siga nas redes sociais</div>
+			<div class="grid justify-content-center gap-3">
+				<a href="https://github.com/mlorac" target="_blank"><div class="icon-github"></div></a>
+				<a href="https://www.linkedin.com/in/mlorac/" target="_blank"><div class="icon-linkedin"></div></a>
+				<a href="https://medium.com/@mlorac" target="_blank"><div class="icon-medium"></div></a>
+				<a href="https://wa.link/8dwwkx" target="_blank"><div class="icon-whatsapp"></div></a>
+			</div>
+			<div class="label">Mindnight Studio Design - CNPJ: 43.917.875/0001-65</div>
+			<div class="label">Copyright 2023 - Todos os direitos reservados</div>
+		</div>
+	</footer>
 </html>

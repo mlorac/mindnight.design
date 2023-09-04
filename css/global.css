@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 :root {
     --background-light: #F5F5F5;
     --background-pink: #FFEEF6;
     --background-blue: #ECF5FD;
+    --background-lilac: #F6F1FE;
     --font-color: #1d1d1d;
     --font-color-light: #fefefe;
     --font-family-title: 'Josefin Sans', sans-serif!important;
-    --font-family-body: 'Josefin Slab', serif;;
-    --color-pink: rgb(255,79,165);
+    --font-family-body: 'Josefin Slab', serif;
+    --font-family-label: 'Roboto Slab', serif;
+    --color-pink: #FF4FA5;
+    --color-pink100: #FFCBE3;
+    --color-pink200: #FFA8D1;
     --color-pink300: #FF85BE;
     --color-pink400: #FE62AB;
     --color-pink700: #B9006D;
+    --color-pink900: #750043;
     --color-blue: #3FAFEE;
+    --color-blue300: #72B8E9;
+    --color-blue700: #00679D;
+    --color-lilac: #9376D2;
+    --color-lilac300: #BEA4ED;
+    --color-lilac700: #6850A2;
     --gray-dark: #3D3D3D;
     --shadow-button: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     --gradient-pattern: linear-gradient(90deg, rgba(255,79,165,1) 0%, rgba(63,175,238,1) 100%);
@@ -28,7 +39,6 @@ body {
     font-family: var(--font-family-body);
     font-weight: 700;
     font-size: 1.1rem;
-    line-height: 2;
     background-color: var(--background-light);
 }
 
@@ -66,17 +76,34 @@ html {
     background: var(--color-blue);
 }
 
+.w-70 {
+    width: 70%;
+}
+
 .logo {
 	background-image: url( "../images/logo_vertical.svg");
 	background-repeat: no-repeat;
     width: 300px;
 	height: 300px;
 }
+
+.logo-footer {
+	background-image: url( "../images/logo_vertical.svg");
+	background-repeat: no-repeat;
+    width: 130px;
+	height: 130px;
+}
 .logo--mini {
     background-image: url("../images/logo_icon.svg");
 	background-repeat: no-repeat;
     width: 45px;
 	height: 45px;
+}
+
+.divider {
+    background-color: var(--color-pink200);
+    min-height: 0.05rem;
+    width: 80%;
 }
 
 /*-- Inspiration taken from abdo steif -->
@@ -161,9 +188,11 @@ html {
 }
 
 .nav-bar {
-    padding: 5px 30px;
+    padding: 12px 30px;
     background-color: #111;
     display: block;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 
@@ -172,12 +201,14 @@ html {
     color: var(--font-color);
 	text-align:center;
 	font-size: 4rem;
+    margin: 1rem 0;
 }
 
 .section-page {
     padding-top: 65px;
     min-height: 50vh;
 }
+
 
 .myP {
 	text-align: justify;
@@ -197,4 +228,71 @@ html {
 	text-align:center;
 	font-size: 4rem;
     padding: 16px;
+}
+
+.footer {
+    background-color: var(--font-color);
+    color: var(--background-light);
+    padding: 30px;
+}
+
+.text-bold {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.label {
+    font-family: var(--font-family-label);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.icon-github {
+    background-image: url( "../images/github.svg");
+	background-repeat: no-repeat;
+    width: 32px;
+	height: 32px;
+}
+
+.icon-linkedin {
+    background-image: url( "../images/linkedin.svg");
+	background-repeat: no-repeat;
+    width: 32px;
+	height: 32px;
+}
+
+.icon-medium {
+    background-image: url( "../images/medium.svg");
+	background-repeat: no-repeat;
+    width: 32px;
+	height: 32px;
+}
+
+.icon-whatsapp {
+    background-image: url( "../images/whatsapp.svg");
+	background-repeat: no-repeat;
+    width: 32px;
+	height: 32px;
+}
+
+.card {
+    background-color: var(--font-color-light);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-button);
+    width: 100%;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.card-title {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-cover {
+    width: 80px;
+    height: 80px;
 }
