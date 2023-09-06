@@ -3,12 +3,12 @@
 @function generate-random-stars ($screen-width, $color, $density){
   
     $h-shadow: random($screen-width);
-    $v-shadow: random(calc($screen-width/2));
+    $v-shadow: random(calc($screen-width/2.5));
     
     $stars: '#{$h-shadow}px #{$v-shadow}px #{$color}';
       @for $i from 2 through $density {
         $h-shadow: random($screen-width);
-        $v-shadow: random(calc($screen-width/2));
+        $v-shadow: random(calc($screen-width/2.5));
       
       $stars: '#{$stars}, #{$h-shadow}px #{$v-shadow}px #{$color}';
       }
@@ -32,27 +32,27 @@
 
 /* Change colors for multi-colors star groups */  
 #stars-group-1{
-    @include stars-content(1800, #fff, 100, 1, 0.3);
+    @include stars-content(2600, #fff, 100, 1, 0.3);
 }
   
 #stars-group-2{
-    @include stars-content(1800, #fff, 100, 1, 0.6);
+    @include stars-content(2600, #fff, 100, 1, 0.6);
 }
   
 #stars-group-3{
-    @include stars-content(1800, #fff, 100, 1, 0.9);
+    @include stars-content(2600, #fff, 100, 1, 0.9);
 }
   
 #stars-group-4{
-    @include stars-content(1800, #fff, 100, 1, 1.2);
+    @include stars-content(2600, #fff, 150, 1, 1.2);
 }
   
 #stars-group-5{
-    @include stars-content(1800, #fff, 100, 1, 1.8);
+    @include stars-content(2600, #fff, 150, 1, 1.8);
 }
   
 #stars-group-6{
-    @include stars-content(1800, #fff, 100, 1, 2.1);
+    @include stars-content(2600, #fff, 150, 1, 2.1);
 }
   
   
