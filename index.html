@@ -8,13 +8,20 @@
         <title>Mindnight Studio Design - Portfólio Carol Manfredini</title>
 		
 		<link rel="stylesheet" href="css/global.css">
-		<link rel="stylesheet" href="css/buttons.css">
-		<link rel="stylesheet" href="css/tag.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/components.css">
+		<link rel="stylesheet" href="css/stars.css">
+		
 		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="mindnight">
+		<div id="stars-group-1"></div>
+		<div id="stars-group-2"></div>
+		<div id="stars-group-3"></div>
+		<div id="stars-group-4"></div>
+		<div id="stars-group-5"></div>
+		<div id="stars-group-6"></div>
 		<nav class="nav">
 			<div class="flex justify-content-between align-items-center">
 				<a href="./">
@@ -22,26 +29,28 @@
 				</a>
 				<div id="mainListDiv" class="main_list">
 					<ul class="navlinks">
-						<li><a href="#about-mindnight">Quem sou</a></li>
-						<li><a href="#portfolio-mindnight">Projetos</a></li>
-						<li><a href="#contact-mindnight">Contato</a></li>
+						<li><a href="#about">Sobre</a></li>
+						<li><a href="#portfolio">Projetos</a></li>
+						<li><a href="#contact">Contato</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="home" class="background">
+			
 			<div class="gradient flex flex-column align-items-center justify-content-evenly">
+				
 				<a href="./">
 					<div class="logo"></div>
 				</a>
 				<div class="menu-home">
-					<a href="#about-mindnight">Quem sou</a>
-					<a href="#portfolio-mindnight">Projetos</a>
-					<a href="#contact-mindnight">Contato</a>
+					<a href="#about">Sobre</a>
+					<a href="#portfolio">Projetos</a>
+					<a href="#contact">Contato</a>
 				</div>
 			</div>
 		</section>
-		<section id="about-mindnight" class="section-page m-3 md:m-4 lg:m-6 md:mt-0 mb-4">
+		<section id="about" class="section-page m-3 md:m-4 lg:m-6 md:mt-0 mb-4">
 			<div class="title-page">Sobre o estúdio</div>
 			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
 				<div class="col-12 md:col-4 image-profile">
@@ -60,74 +69,115 @@
 				</a>
 			</div>
 		</section>
-		<section id="portfolio-mindnight" class="section-page bg-pink p-3 md:p-4 lg:p-6 py-4">
+		<section id="portfolio" class="section-page bg-pink p-3 md:p-4 lg:p-6 py-4 gap-3">
 			<div class="title-page">Portfólio</div>
-			<div class="grid justify-content-center align-items-center m-3 md:m-4 lg:m-6 gap-4">
-				<div class="card grid gap-2 col-12 md:col-10 lg:col-4 m-0">
-					<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-					<div class="grid m-0">
-						<div class="grid justify-content-between flex-column m-0">
-							<div>
-								<div class="card-title">
-									Hexágono
-								</div>
-								<div class="label w-70">
-									Estudo de marca para marcenaria
-								</div>
+			<div class="grid align-items-stretch m-3 md:m-4 lg:m-6">
+				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					<div class="card">
+						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+						<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
+							<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
 							</div>
-							<div class="grid m-0">
-								<div class="tag tag-pink">
-									Branding
-								</div>
+							<div class="card-title">
+								Hexágono
+							</div>
+							<div class="label">
+								Estudo de marca para marcenaria
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="card grid gap-2 col-12 md:col-9 lg:col-4 m-0">
-					<div class="col-3">
-						<img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg">
-					</div>
-					<div class="col-9 grid justify-content-between flex-column m-0">
-						<div>
+
+				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					<div class="card">
+						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+						<div class="grid m-0 gap-2 flex-column card-content">
+							<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
+								<div class="tag tag-webdesign"></div>
+							</div>
 							<div class="card-title">
 								ATP Artes
 							</div>
 							<div class="label">
 								Rebranding da marca para gráfica encadernadora artesanal
 							</div>
+							
 						</div>
-						<div class="grid m-0 gap-1">
-							<div class="tag tag-pink">
-								Branding
+					</div>
+				</div>
+				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					<div class="card">
+						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+						<div class="grid m-0 gap-2 flex-column card-content">
+							<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
+								<div class="tag tag-webdesign"></div>
 							</div>
-							<div class="tag tag-rubro">
-								Web Design
+							<div class="card-title">
+								ATP Artes
 							</div>
+							<div class="label">
+								Rebranding da marca para gráfica encadernadora artesanal
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					<div class="card">
+						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+						<div class="grid m-0 gap-2 flex-column card-content">
+							<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
+								<div class="tag tag-webdesign"></div>
+							</div>
+							<div class="card-title">
+								ATP Artes
+							</div>
+							<div class="label">
+								Rebranding da marca para gráfica encadernadora artesanal
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					<div class="card">
+						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
+						<div class="grid m-0 gap-2 flex-column card-content">
+							<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
+								<div class="tag tag-webdesign"></div>
+							</div>
+							<div class="card-title">
+								ATP Artes
+							</div>
+							<div class="label">
+								Rebranding da marca para gráfica encadernadora artesanal
+							</div>
+							
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="grid justify-content-center m-0">
+				<a class="button btn-primary-pink" href="./about">
+					Conheça a artista
+				</a>
+			</div>
 		</section>
-		<section id="contact-mindnight" class="section-page m-3 md:m-4 lg:m-6">
+		<section id="contact" class="section-page m-3 md:m-4 lg:m-6">
 			<h2 class="title-page">Contato</h2>
 		</section>
 	</body>
-
-	<script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 780) {
-                $('.nav').addClass('nav-bar');
-            } else {
-                $('.nav').removeClass('nav-bar');
-            }
-        });
-    </script>
 	<footer class="footer">
 		<div class="grid flex-column m-0 align-items-center gap-2 md:gap-3">
 			<div class="logo-footer"></div>
 			<div class="divider"></div>
 			<div class="text-bold">Me siga nas redes sociais</div>
-			<div class="grid justify-content-center gap-3">
+			<div class="grid justify-content-center gap-3 m-0">
 				<a href="https://github.com/mlorac" target="_blank"><div class="icon-github"></div></a>
 				<a href="https://www.linkedin.com/in/mlorac/" target="_blank"><div class="icon-linkedin"></div></a>
 				<a href="https://medium.com/@mlorac" target="_blank"><div class="icon-medium"></div></a>
@@ -137,4 +187,5 @@
 			<div class="label">Copyright 2023 - Todos os direitos reservados</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/navbar.js"></script>
 </html>
