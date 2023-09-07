@@ -7,9 +7,9 @@
         <meta name="author" content="Carol Manfredini">
         <title>Mindnight Studio Design - Portfólio Carol Manfredini</title>
 		
-		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/responsive.css">
 		<link rel="stylesheet" href="css/components.css">
+		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/stars.css">
 		
 		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
@@ -31,25 +31,28 @@
 					<ul class="navlinks">
 						<li><a href="#about">Sobre</a></li>
 						<li><a href="#portfolio">Projetos</a></li>
-						<li><a href="#contact">Contato</a></li>
+						<li><a href="#download">Downloads</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<section id="home" class="background">
-			
 			<div class="gradient flex flex-column align-items-center justify-content-evenly">
-				
-				<a href="./">
+				<div class="grid flex-column align-items-center">
 					<div class="logo"></div>
-				</a>
+					<h4 class="slogan">
+						Design Studio by Carol Manfredini
+					</h4>
+				</div>
+				
 				<div class="menu-home">
-					<a href="#about">Sobre</a>
-					<a href="#portfolio">Projetos</a>
-					<a href="#contact">Contato</a>
+					<a href="#about" class="menu-blue">Sobre</a>
+					<a href="#portfolio" class="menu-blue">Projetos</a>
+					<a href="#download" class="menu-blue">Downloads</a>
 				</div>
 			</div>
 		</section>
+
 		<section id="about" class="section-page m-3 md:m-4 lg:m-6 md:mt-0 mb-4">
 			<div class="title-page">Sobre o estúdio</div>
 			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
@@ -69,107 +72,157 @@
 				</a>
 			</div>
 		</section>
-		<section id="portfolio" class="section-page bg-pink p-3 md:p-4 lg:p-6 py-4 gap-3">
-			<div class="title-page">Portfólio</div>
-			<div class="grid align-items-stretch m-3 md:m-4 lg:m-6">
-				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-					<div class="card">
-						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-						<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
-							<div class="grid m-0 gap-2">
-								<div class="tag tag-branding"></div>
+		
+		<section id="portfolio" class="bg-pink">
+			<div class="section-page">
+				<div class="grid align-items-stretch m-3 md:m-4 lg:m-6">
+					<div class="title-page col-12 p-0">Portfólio</div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<a href="./portfolio/mindnight.html">
+							<div class="card">
+								<div class="card-cover"><img src="./images/portfolio/mindnight/capa.jpg"></div>
+								<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
+									<div class="grid m-0 gap-2">
+										<div class="tag tag-branding"></div>
+									</div>
+									<div class="card-title">
+										Mindnight
+									</div>
+									<div class="label">
+										Estudo de marca pessoal
+									</div>
+								</div>
 							</div>
-							<div class="card-title">
-								Hexágono
-							</div>
-							<div class="label">
-								Estudo de marca para marcenaria
-							</div>
-						</div>
+						</a>
 					</div>
-				</div>
 
-				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-					<div class="card">
-						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-						<div class="grid m-0 gap-2 flex-column card-content">
-							<div class="grid m-0 gap-2">
-								<div class="tag tag-branding"></div>
-								<div class="tag tag-webdesign"></div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/hexagono/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-branding"></div>
+								</div>
+								<div class="card-title">
+									Hexágono
+								</div>
+								<div class="label">
+									Estudo de marca para marcenaria
+								</div>
 							</div>
-							<div class="card-title">
-								ATP Artes
-							</div>
-							<div class="label">
-								Rebranding da marca para gráfica encadernadora artesanal
-							</div>
-							
 						</div>
 					</div>
-				</div>
-				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-					<div class="card">
-						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-						<div class="grid m-0 gap-2 flex-column card-content">
-							<div class="grid m-0 gap-2">
-								<div class="tag tag-branding"></div>
-								<div class="tag tag-webdesign"></div>
+	
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/atp_artes/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-branding"></div>
+									<div class="tag tag-webdesign"></div>
+								</div>
+								<div class="card-title">
+									ATP Artes
+								</div>
+								<div class="label">
+									Rebranding da marca para gráfica encadernadora artesanal
+								</div>
+								
 							</div>
-							<div class="card-title">
-								ATP Artes
-							</div>
-							<div class="label">
-								Rebranding da marca para gráfica encadernadora artesanal
-							</div>
-							
 						</div>
 					</div>
-				</div>
-				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-					<div class="card">
-						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-						<div class="grid m-0 gap-2 flex-column card-content">
-							<div class="grid m-0 gap-2">
-								<div class="tag tag-branding"></div>
-								<div class="tag tag-webdesign"></div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/tais_struani/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-branding"></div>
+								</div>
+								<div class="card-title">
+									Tais Struani
+								</div>
+								<div class="label">
+									Marca pessoal para fiosioterapeuta
+								</div>
+								
 							</div>
-							<div class="card-title">
-								ATP Artes
-							</div>
-							<div class="label">
-								Rebranding da marca para gráfica encadernadora artesanal
-							</div>
-							
 						</div>
 					</div>
-				</div>
-				<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-					<div class="card">
-						<div><img class="pb card-cover" src="./images/portfolio/hexagono/capa.jpg"></div>
-						<div class="grid m-0 gap-2 flex-column card-content">
-							<div class="grid m-0 gap-2">
-								<div class="tag tag-branding"></div>
-								<div class="tag tag-webdesign"></div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/glaciattus/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-branding"></div>
+								</div>
+								<div class="card-title">
+									Glaciattus
+								</div>
+								<div class="label">
+									Branding criado para streamer
+								</div>
+								
 							</div>
-							<div class="card-title">
-								ATP Artes
-							</div>
-							<div class="label">
-								Rebranding da marca para gráfica encadernadora artesanal
-							</div>
-							
 						</div>
 					</div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/assinatura/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-branding"></div>
+									<div class="tag tag-artigo"></div>
+								</div>
+								<div class="card-title">
+									Assinatura e-mails
+								</div>
+								<div class="label">
+									Como configurar corretamente sua assinatura de e-mail
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+						<div class="card">
+							<div class="card-cover"><img src="./images/portfolio/clique/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2">
+									<div class="tag tag-code"></div>
+									<div class="tag tag-artigo"></div>
+								</div>
+								<div class="card-title">
+									Usabilidade no clique
+								</div>
+								<div class="label">
+									Estudo de usabilidade em eventos de navegação utilizando Angular
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid col-12 justify-content-center m-3 mb-4">
+						<a class="button btn-primary-blue" href="https://wa.link/8dwwkx">
+							Solicite seu projeto
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="grid justify-content-center m-0">
-				<a class="button btn-primary-pink" href="./about">
-					Conheça a artista
-				</a>
 			</div>
 		</section>
-		<section id="contact" class="section-page m-3 md:m-4 lg:m-6">
-			<h2 class="title-page">Contato</h2>
+		<section id="download" class="section-page m-3 md:m-4 lg:m-6">
+			<h2 class="title-page">Downloads</h2>
+			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
+				<div class="col-12 md:col-4 image-profile">
+					<img src="./images/perfil.jpg" style="width: 100%;">
+				</div>
+				<div class="col-12 md:col-6 line-height-4">
+					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.<br>
+					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.<br>
+					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.<br>
+					Após 6 anos de aprendizado e lapidação, a marca ganhou sua forma final. Uma história tão forte que foi traduzida em formas e cores.
+				</div>
+			</div>
 		</section>
 	</body>
 	<footer class="footer">

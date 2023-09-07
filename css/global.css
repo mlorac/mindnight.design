@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 :root {
-    --background-light: #F5F5F5;
+    --background-light: #FEFEFE;
     --background-pink: #FFEEF6;
     --background-blue: #ECF5FD;
     --background-lilac: #F6F1FE;
@@ -20,9 +20,12 @@
     --color-pink700: #B9006D;
     --color-pink900: #750043;
     --color-blue: #3FAFEE;
+    --color-blue200: #9CCCF2;
     --color-blue300: #72B8E9;
     --color-blue700: #00679D;
     --color-lilac: #9376D2;
+    --color-lilac100: #E5D7FB;
+    --color-lilac200: #D2BDF6;
     --color-lilac300: #BEA4ED;
     --color-lilac700: #6850A2;
     --color-purple: #322050;
@@ -48,8 +51,20 @@ body {
     background-color: var(--background-pink);
 }
 
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.slogan {
+    margin-block: 0;
+    text-align: center;
+    margin-top: -16px;
+    font-size: 1.2rem;
+    color: var(--color-lilac200);
 }
 
 :target {
@@ -118,25 +133,28 @@ html {
 .menu-home > a {
     font-family: var(--font-family-title);
     text-decoration: none;
-    color: #fff;
     font-size: 1.2rem;
+    border-bottom: 3px solid transparent;
+}
+
+.menu-blue {
+    color: var(--font-color-light);
 }
 .menu-home > a:hover {
-    text-decoration: underline;
+    border-bottom-color: var(--color-pink);
 }
 
 .nav {
 	font-family: var(--font-family-title);
     position: fixed;
     width: -webkit-fill-available;
-    line-height: 65px;
+    line-height: 64px;
     text-align: center;
     display: none;
 }
 
 .nav div.main_list ul {
     width: 100%;
-    height: 65px;
     display: flex;
     list-style: none;
     margin: 0;
@@ -145,14 +163,14 @@ html {
 
 .nav div.main_list ul li {
     width: auto;
-    height: 65px;
+    height: 54px;
     margin-left: 1rem;
 }
 
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #fff;
-    line-height: 65px;
+    line-height: 64px;
     font-size: 1rem;
 }
 
@@ -187,11 +205,12 @@ html {
 }
 
 .nav-bar {
-    padding: 12px 30px;
+    padding: 8px 30px;
     background-color: #111;
     display: block;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
+    z-index: 1001;
 }
 
 
@@ -206,6 +225,8 @@ html {
 .section-page {
     padding-top: 65px;
     min-height: 50vh;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
@@ -221,12 +242,15 @@ html {
 }
 
 .title-header {
-    background: linear-gradient(180deg, rgba(255,79,165,0) 20%, rgba(245,245,245,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(255,79,165,0) 100%);
     font-family: var(--font-family-title);
-    color: var(--font-color);
+    color: var(--font-color-light);
 	text-align:center;
 	font-size: 4rem;
-    padding: 16px;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -278,8 +302,8 @@ html {
 .card {
     background-color: var(--font-color-light);
     box-shadow: var(--shadow-button);
+    color: var(--font-color);
     margin: 0;
-    border-radius: 8px;
     overflow: hidden;
     height: 100%;
 }
@@ -291,11 +315,26 @@ html {
 .card-title {
     font-family: var(--font-family-title);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .card-cover {
-    width: 100%;
-    height: 150px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.card-cover::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+.card-cover img {
+    position: absolute;
+    width: 95%;
+    height: 95%;
     object-fit: cover;
+    object-position: 50% 50%;
 }

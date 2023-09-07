@@ -6,6 +6,7 @@
     font-size: 1.2rem;
     box-shadow: var(--shadow-button);
     text-decoration: none;
+    color: var(--font-color-light);
 }
 
 .btn-primary-pink {
@@ -24,7 +25,7 @@
     background-color: var(--color-blue);
 }
 .btn-primary-blue:hover {
-    background-color: var(--color-blue400);
+    background-color: var(--color-blue300);
 }
 .btn-primary-blue:active {
     background-color: var(--color-blue700);
@@ -35,7 +36,6 @@
     border-radius: 40px;
     font-family: var(--font-family-label);
     font-size: 12px;
-    font-weight: 300px;
 }
 .tag::before {
     content: '';
@@ -46,6 +46,10 @@
     -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     margin-right: 4px;
+}
+
+.tags-list {
+    margin-top: -24px;
 }
 
 .tag-branding {
@@ -95,5 +99,5 @@
     background-color: var(--color-purple);
 }
 .tag-artigo::after {
-    content: 'Web Design';
+    content: 'Artigo';
 }
