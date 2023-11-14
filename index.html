@@ -7,97 +7,61 @@
         <meta name="author" content="Carol Manfredini">
         <title>Mindnight Studio Design - Portfólio Carol Manfredini</title>
 		
-		<link rel="stylesheet" href="css/responsive.css">
 		<link rel="stylesheet" href="css/components.css">
 		<link rel="stylesheet" href="css/global.css">
-		<link rel="stylesheet" href="css/stars.css">
+		<link rel="stylesheet" href="css/accordion.css">
+		<link rel="stylesheet" href="css/responsive.css">
 		
 		<link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 	<body id="mindnight">
-		<div id="stars-group-1"></div>
-		<div id="stars-group-2"></div>
-		<div id="stars-group-3"></div>
-		<div id="stars-group-4"></div>
-		<div id="stars-group-5"></div>
-		<div id="stars-group-6"></div>
-		<nav class="nav">
-			<div class="flex justify-content-between align-items-center">
-				<a href="./">
-					<div class="logo logo--mini"></div>
-				</a>
-				<div id="mainListDiv" class="main_list">
-					<ul class="navlinks">
-						<li><a href="#about">Sobre</a></li>
-						<li><a href="#portfolio">Projetos</a></li>
-						<li><a href="#download">Downloads</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<section id="home" class="background">
-			<div class="gradient flex flex-column align-items-center justify-content-evenly">
-				<div class="grid flex-column align-items-center">
-					<div class="logo"></div>
-					<h4 class="slogan">
-						Design Studio by Carol Manfredini
-					</h4>
-				</div>
-				
-				<div class="menu-home">
-					<a href="#about" class="menu-blue">Sobre</a>
-					<a href="#portfolio" class="menu-blue">Projetos</a>
-					<a href="#download" class="menu-blue">Downloads</a>
-				</div>
-			</div>
-		</section>
+		<div class="bg-header"></div>
 
-		<section id="about" class="section-page m-3 md:m-4 lg:m-6 md:mt-0 mb-4">
-			<div class="title-page">Sobre o estúdio</div>
-			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
-				<div class="col-12 md:col-4 image-profile">
-					<img src="./images/perfil.jpg" style="width: 100%;">
+		<div class="full-page relative">
+			<div class="grid w-full justify-content-between pb-3 md:pb-4 lg:pb-6 m-0">
+				<div class="col-6 grid">
+					<div class="bg-title"></div>
 				</div>
-				<div class="col-12 md:col-6 line-height-4">
-					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.<br>
-					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.<br>
-					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.<br>
-					Após 6 anos de aprendizado e lapidação, a marca ganhou sua forma final. Uma história tão forte que foi traduzida em formas e cores.
+				<div class="col-6 grid justify-content-end">
+					<img class="img-whale" alt="title" src="./images/whale.png">
+					<div class="flex flex-column mt-4">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis rutrum odio vel hendrerit. Nam neque purus, feugiat nec metus eu, ultricies luctus erat. Suspendisse varius sapien non mauris gravida aliquam. Curabitur eleifend purus tempor nunc euismod tincidunt. Mauris gravida elementum felis, vitae molestie leo condimentum a. Nam ac viverra erat, ac interdum urna. Nulla et neque vel dui pulvinar luctus. Proin tempus metus quis elit blandit, faucibus imperdiet sapien hendrerit. Aenean fermentum, enim nec consequat facilisis, felis orci interdum diam, eget tincidunt dolor libero sed felis. Phasellus eu mattis nisl. Nullam lobortis risus eget neque vestibulum sagittis.
+						</p>
+						<p>
+							Praesent nibh justo, tempor at dictum id, hendrerit ut risus. Pellentesque pharetra erat a risus mattis luctus. In ut nibh mattis orci tempor ullamcorper nec et enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque nec lectus in tortor ornare vehicula vel nec sem. Donec condimentum eleifend nunc in sagittis. Proin ac urna sit amet odio consequat fermentum. Pellentesque tempor, purus ut imperdiet pellentesque, libero erat fermentum quam, a pretium orci risus eu urna. Suspendisse ultrices nunc ac orci rhoncus varius. Pellentesque eu leo arcu. Donec tempor eget quam in consequat. Phasellus eget sem ut est blandit lobortis.
+						</p>
+					</div>
 				</div>
+				<div class="col-6">terá uma fotenha</div>
 			</div>
-			<div class="grid justify-content-center m-0">
-				<a class="button btn-primary-pink" href="./about">
-					Conheça a artista
-				</a>
-			</div>
-		</section>
-		
-		<section id="portfolio" class="bg-pink">
-			<div class="section-page">
-				<div class="grid align-items-stretch m-3 md:m-4 lg:m-6 mt-0">
-					<div class="title-page col-12 p-0">Portfólio</div>
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-						<a href="./portfolio/mindnight">
-							<div class="card">
-								<div class="card-cover"><img src="./images/portfolio/mindnight/capa.jpg"></div>
-								<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
-									<div class="grid m-0 gap-2">
-										<div class="tag tag-branding"></div>
-									</div>
-									<div class="card-title">
-										Mindnight
-									</div>
-									<div class="label">
-										Estudo de marca pessoal
-									</div>
+
+			<div class="grid py-3 md:py-4 lg:py-6">
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a href="./portfolio/mindnight" class="flex flex-column align-items-center">
+						<img src="./images/tapes/pink.png" class="tape-position"> 
+						<div class="card w-full">
+							<div class="card-cover"><img src="./images/portfolio/mindnight/capa.jpg"></div>
+							<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
+								<div class="grid m-0 gap-2">
+								<div class="tag tag-branding"></div>
+								</div>
+								<div class="card-title">
+									Mindnight
+								</div>
+								<div class="label">
+									Estudo de marca pessoal
 								</div>
 							</div>
-						</a>
-					</div>
+						</div>
+					</a>
+				</div>
 
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-						<div class="card">
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a href="./portfolio/hexagono.html" class="flex flex-column align-items-center">
+						<img src="./images/tapes/blue.png" class="tape-position"> 
+						<div class="card w-full">
 							<div class="card-cover"><img src="./images/portfolio/hexagono/capa.jpg"></div>
 							<div class="grid m-0 gap-2 flex-column card-content justify-content-between">
 								<div class="grid m-0 gap-2">
@@ -111,12 +75,15 @@
 								</div>
 							</div>
 						</div>
-					</div>
-	
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-						<div class="card">
+					</a>
+				</div>
+
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a class="flex flex-column align-items-center">
+						<img src="./images/tapes/lilac.png" class="tape-position"> 
+						<div class="card w-full">
 							<div class="card-cover"><img src="./images/portfolio/atp_artes/capa.jpg"></div>
-							<div class="grid m-0 gap-2 flex-column card-content">
+								<div class="grid m-0 gap-2 flex-column card-content">
 								<div class="grid m-0 gap-2">
 									<div class="tag tag-branding"></div>
 									<div class="tag tag-webdesign"></div>
@@ -125,14 +92,17 @@
 									ATP Artes
 								</div>
 								<div class="label">
-									Rebranding da marca para gráfica encadernadora artesanal
+									Redesign de marca para encadernadora artesanal
 								</div>
-								
 							</div>
 						</div>
-					</div>
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-						<div class="card">
+					</a>
+				</div>
+
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a class="flex flex-column align-items-center">
+						<img src="./images/tapes/pink.png" class="tape-position"> 
+						<div class="card w-full">
 							<div class="card-cover"><img src="./images/portfolio/tais_struani/capa.jpg"></div>
 							<div class="grid m-0 gap-2 flex-column card-content">
 								<div class="grid m-0 gap-2">
@@ -144,12 +114,15 @@
 								<div class="label">
 									Marca pessoal para fiosioterapeuta
 								</div>
-								
 							</div>
 						</div>
-					</div>
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
-						<div class="card">
+					</a>
+				</div>
+
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a class="flex flex-column align-items-center">
+						<img src="./images/tapes/blue.png" class="tape-position">
+						<div class="card w-full">
 							<div class="card-cover"><img src="./images/portfolio/glaciattus/capa.jpg"></div>
 							<div class="grid m-0 gap-2 flex-column card-content">
 								<div class="grid m-0 gap-2">
@@ -161,16 +134,18 @@
 								<div class="label">
 									Branding criado para streamer
 								</div>
-								
 							</div>
 						</div>
-					</div>
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					</a>
+				</div>
+
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a class="flex flex-column align-items-center">
+						<img src="./images/tapes/lilac.png" class="tape-position">
 						<div class="card">
 							<div class="card-cover"><img src="./images/portfolio/assinatura/capa.jpg"></div>
 							<div class="grid m-0 gap-2 flex-column card-content">
 								<div class="grid m-0 gap-2">
-									<div class="tag tag-branding"></div>
 									<div class="tag tag-artigo"></div>
 								</div>
 								<div class="card-title">
@@ -179,11 +154,14 @@
 								<div class="label">
 									Como configurar corretamente sua assinatura de e-mail
 								</div>
-								
 							</div>
 						</div>
-					</div>
-					<div class="col-12 md:col-6 lg:col-4 xl:col-3">
+					</a>
+				</div>
+
+				<div class="col-6 lg:col-4 xl:col-3 flex align-items-stretch">
+					<a class="flex flex-column align-items-center">
+						<img src="./images/tapes/pink.png" class="tape-position">
 						<div class="card">
 							<div class="card-cover"><img src="./images/portfolio/clique/capa.jpg"></div>
 							<div class="grid m-0 gap-2 flex-column card-content">
@@ -197,48 +175,53 @@
 								<div class="label">
 									Estudo de usabilidade em eventos de navegação utilizando Angular
 								</div>
-								
 							</div>
 						</div>
+					</a>
+				</div>
+				
+				<div class="grid col-12 justify-content-center m-3 mb-4">
+				<a class="button btn-primary-blue" href="https://wa.link/8dwwkx">
+					Solicite seu projeto
+				</a>
+				</div>
+
+				<div class="accordion grid justify-content-center col-12">            
+					<div class="accordion-list col-12 md:col-10">
+						<h3 class="title">Experiência</h3>
+						<div class="content">A knife bolster is the thick section between the handle and the blade, and it strengthens the knife, and gives better balance and control. However, there is much disagreement on whether or not it is necessary.</div>
 					</div>
-					
-					<div class="grid col-12 justify-content-center m-3 mb-4">
-						<a class="button btn-primary-blue" href="https://wa.link/8dwwkx">
-							Solicite seu projeto
-						</a>
+				
+					<div class="accordion-list col-12 md:col-10">
+						<h3 class="title">Formação</h3>
+						<div class="content">Forged knives are stronger and retain their edge longer than stamped knives, which have more flexible blades. In the case of Wusthof, their forged knives go through 40 different steps in their factory, where the laser-cut knives go through 14 steps. Also, their forged knives include a bolster, which balances the knife and protects fingers, although bolsters can also be added to laser-cut knives. Laser-cut stamped knives can be of excellent quality too, however, and they are more economically priced.</div>
 					</div>
+				
+					<div class="accordion-list col-12 md:col-10">
+						<h3 class="title">Habilidades</h3>
+						<div class="content">Always wash them by hand with hot, soapy water. Never drop them in with a sinkful of dirty dishes, or run them through a dishwasher, which will not only bang them together, but damage the blade through excessive heating.</div>
+					</div>
+				
+					<!-- <div class="accordion-list col-12 md:col-10">
+						<h3 class="title">Certificações</h3>
+						<div class="content">The more you can spend, the better, but there are some less expensive options, such as Victorinox, which also make Swiss Army Knives. The blades are very sharp, and well-made for the price.</div>
+					</div> -->
 				</div>
 			</div>
-		</section>
-		<section id="download" class="section-page m-3 md:m-4 lg:m-6">
-			<h2 class="title-page">Downloads</h2>
-			<div class="grid my-3 mx-0 md:m-4 lg:m-6 justify-content-center align-items-center">
-				<div class="col-12 md:col-4 image-profile">
-					<img src="./images/perfil.jpg" style="width: 100%;">
-				</div>
-				<div class="col-12 md:col-6 line-height-4">
-					O Estúdio Mindnight nasceu da vontade de expor trabalhos pessoais na internet de uma forma profissional e autêntica.<br>
-					O nome mindnight veio de um erro de digitação da palavra “midnight” (meia-noite em inglês) e acabou resultando um outro sentido à marca: mind (mente em inglês) e night (noite em inglês) criou a expressão “mente noturna”.<br>
-					A artista sempre trabalhou em projetos pessoais no período da noite, pois o seu trabalho principal ocupava todo o dia. O naming Mindnight traduziu exatamente o que fazia: “Criações na parte da noite - uma mente noturna”.<br>
-					Após 6 anos de aprendizado e lapidação, a marca ganhou sua forma final. Uma história tão forte que foi traduzida em formas e cores.
-				</div>
-			</div>
-		</section>
-	</body>
-	<footer class="footer">
-		<div class="grid flex-column m-0 align-items-center gap-2 md:gap-3">
-			<div class="logo-footer"></div>
-			<div class="divider"></div>
-			<div class="text-bold">Me siga nas redes sociais</div>
-			<div class="grid justify-content-center gap-3 m-0">
-				<a href="https://github.com/mlorac" target="_blank"><div class="icon-github"></div></a>
-				<a href="https://www.linkedin.com/in/mlorac/" target="_blank"><div class="icon-linkedin"></div></a>
-				<a href="https://medium.com/@mlorac" target="_blank"><div class="icon-medium"></div></a>
-				<a href="https://wa.link/8dwwkx" target="_blank"><div class="icon-whatsapp"></div></a>
-			</div>
-			<div class="label">Mindnight Studio Design - CNPJ: 43.917.875/0001-65</div>
-			<div class="label">Copyright 2023 - Todos os direitos reservados</div>
 		</div>
+	</body>
+	<footer class="footer m-0 grid flex-column align-items-center justify-content-center gap-2 md:gap-3">
+		<div class="logo-footer"></div>
+		<div class="divider"></div>
+		<div class="text-bold">Me siga nas redes sociais</div>
+		<div class="grid justify-content-center gap-3 m-0">
+			<a href="https://github.com/mlorac" target="_blank"><div class="icon-github"></div></a>
+			<a href="https://www.linkedin.com/in/mlorac/" target="_blank"><div class="icon-linkedin"></div></a>
+			<a href="https://medium.com/@mlorac" target="_blank"><div class="icon-medium"></div></a>
+			<a href="https://wa.link/8dwwkx" target="_blank"><div class="icon-whatsapp"></div></a>
+		</div>
+		<div class="label">Mindnight Design by Carol Manfredini - CNPJ: 43.917.875/0001-65</div>
+		<div class="label">Copyright 2023 - Todos os direitos reservados</div>
 	</footer>
-	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/accordion.js"></script>
 </html>
