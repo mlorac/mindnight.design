@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Satisfy&display=swap');
+
 
 :root {
     --background-light: #FEFEFE;
@@ -63,6 +65,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.background {
+    background: var(--background-pink);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 2%, transparent 0),
+                      linear-gradient(rgba(255, 255, 255, 0.5) 2%, transparent 0);
+    background-size: 40px 40px;
+}
+
 .full-page {
     max-width: 1400px;
     min-height: 100vh;
@@ -107,8 +116,8 @@ html {
 .logo-footer {
 	background-image: url( "../images/logo_vertical.svg");
 	background-repeat: no-repeat;
-    width: 150px;
-	height: 150px;
+    width: 180px;
+	height: 180px;
 }
 .logo--mini {
     background-image: url("../images/logo_icon.svg");
@@ -131,23 +140,45 @@ html {
     background-size: contain;
     width: 100%;
     height: 100%;
-    margin-top: -24px;
+    margin-top: -50px;
 }
   
 .bg-title {
     background-image: url(../images/ativo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     margin-top: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.img-title {
-    width: 500px;
+.title-section {
+    background-color: var(--font-color);
+    border-radius: 60px;
+    width: auto;
+    box-shadow: var(--shadow-button);
+    rotate: -3deg;
+    margin-left: 24px;
+}
+
+.title-section-center {
+    background-color: var(--font-color);
+    border-radius: 60px;
+    width: auto;
+    box-shadow: var(--shadow-button);
+    margin-left: 24px;
+    rotate: 3deg;
+}
+
+.title-text {
+    color: var(--font-color-light);
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 24px;
+    padding: 0 60px;
+    /* font-family: 'Satisfy', cursive; */
 }
   
 .img-whale {
@@ -170,7 +201,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50%;
+    height: 60%;
     overflow-x: hidden;
 }
 
@@ -266,4 +297,51 @@ html {
     height: 95%;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.bar-title {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-family-title);
+}
+
+.bar-pink {
+    background: 
+    radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+    conic-gradient(var(--color-pink) 80%, var(--background-pink) 0);    
+}
+.bar-pink-70 {
+    background: 
+    radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+    conic-gradient(var(--color-pink) 70%, var(--background-pink) 0);    
+}
+.bar-blue-65 {
+    background: 
+      radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+      conic-gradient(var(--color-blue) 65%, var(--background-pink) 0);    
+}
+.bar-blue {
+    background: 
+      radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+      conic-gradient(var(--color-blue) 75%, var(--background-pink) 0);    
+}
+.bar-blue-88 {
+    background: 
+      radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+      conic-gradient(var(--color-blue) 88%, var(--background-pink) 0);    
+}
+.bar-lilac {
+    background: 
+      radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+      conic-gradient(var(--color-lilac) 75%, var(--background-pink) 0);    
+}
+.bar-lilac-80 {
+    background: 
+      radial-gradient(closest-side, var(--background-pink) 79%, transparent 80% 100%),
+      conic-gradient(var(--color-lilac) 75%, var(--background-pink) 0);    
 }
