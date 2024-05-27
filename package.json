@@ -1,6 +1,7 @@
 {
   "name": "mindnight",
   "version": "0.0.0",
+  "homepage" : "https://mlorac.github.io/mindnight.design/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
