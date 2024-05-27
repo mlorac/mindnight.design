@@ -1,12 +1,13 @@
 {
   "name": "mindnight",
   "version": "0.0.0",
-  "homepage" : "https://mlorac.github.io/mindnight.design/",
+  "homepage": "https://mlorac.github.io/mindnight.design/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:github": "ng build --output-path docs",
+    "ghpages": "angular-cli-ghpages --dir=dist/mindnight",
+    "deploy": "npm run build && npm run ghpages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "^17.3.10",
     "@angular/platform-browser-dynamic": "^17.3.10",
     "@angular/router": "^17.3.10",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.6"
